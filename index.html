@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Minesweeper</title>
+</head>
+
+<body onload="onInit()">
+    <h1>MineSweeper</h1>
+
+    <div id="game-message"></div>
+
+    <div id="level-container">
+        <button onclick="setLevel(4, 2)">Beginner</button>
+        <button onclick="setLevel(8, 14)">Medium</button>
+        <button onclick="setLevel(12, 32)">Expert</button>
+    </div>
+
+    <div id="smiley-container">
+        <button id="smiley-button" onclick="resetGame()">😃</button>
+    </div>
+
+    <div id="game-info">
+        seconds: <span id="timer"></span> | 💥: <span id="mine-count">2</span> | ❤️: <span id="lives-count">2</span>
+    </div>
+
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+
+    <footer>Meital Tenenboim</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
